@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        a=parseFloat(prompt('Informe o Primeiro valor'));
+        b=parseFloat(prompt('Informe o Segundo valor'));
+        c=parseFloat(prompt('Informe o Terceiro valor'));
+
+        calculaBhaskara(a,b,c);
+
+function calculaBhaskara(ax2, bx, c) {
+    const delta = bx ** 2 - 4 * ax2 * c;
+    if (delta >= 0) {
+        const res = [];
+        v1 = (-bx + Math.sqrt(delta))/( 2 * ax2);
+        res.push(v1);
+        v2 = (-bx - Math.sqrt(delta))/( 2 * ax2);
+        res.push(v2);
+        document.write(res);
+    } else {
+        document.write("Delta é negativo");
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+    <script>
+        NumeroLimite=parseInt(prompt('Informe o limite da contagem'));
+
+        Luidy(NumeroLimite);
+
+function Luidy(NumeroLimite) {
+let Resultado = [];
+for( let i = 1; i <= NumeroLimite; i++){
+    if (i % 5 == 0 && i % 9 == 0){
+        Resultado.push("LuidyMoura");
+      }
+    
+      else if(i % 9 == 0){
+        Resultado.push("Moura");
+    }
+
+     else if(i % 5 == 0){
+        Resultado.push("Luidy");
+     }
+      else{
+         Resultado.push(i);
+      }
+}
+
+document.write(Resultado);
+}
+        
+    </script>
